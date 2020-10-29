@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/DesignMode/DesignMode.iml" filepath="$PROJECT_DIR$/DesignMode/DesignMode.iml" />
+      <module fileurl="file://$PROJECT_DIR$/LeetCode/LeetCode.iml" filepath="$PROJECT_DIR$/LeetCode/LeetCode.iml" />
+      <module fileurl="file://$PROJECT_DIR$/MultiThreadStudy/MultiThreadStudy.iml" filepath="$PROJECT_DIR$/MultiThreadStudy/MultiThreadStudy.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ProjectSpace.iml" filepath="$PROJECT_DIR$/ProjectSpace.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Tools/Tools.iml" filepath="$PROJECT_DIR$/Tools/Tools.iml" />
+      <module fileurl="file://$PROJECT_DIR$/algorithms/algorithms.iml" filepath="$PROJECT_DIR$/algorithms/algorithms.iml" />
+      <module fileurl="file://$PROJECT_DIR$/face/face.iml" filepath="$PROJECT_DIR$/face/face.iml" />
+      <module fileurl="file://$PROJECT_DIR$/metadata/metadata.iml" filepath="$PROJECT_DIR$/metadata/metadata.iml" />
+      <module fileurl="file://$PROJECT_DIR$/patchManage/patchManage.iml" filepath="$PROJECT_DIR$/patchManage/patchManage.iml" />
+    </modules>
+  </component>
+</project>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane fx:id="anchorPane" prefHeight="432.0" prefWidth="691.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="psn.cyf.business.service.ctrl.TestWebServiceCtrl">
+   <children>
+      <Text layoutX="48.0" layoutY="64.0" strokeType="OUTSIDE" strokeWidth="0.0" text="URL" />
+      <TextField fx:id="url" layoutX="114.0" layoutY="43.0" prefHeight="30.0" prefWidth="434.0" />
+      <TextArea fx:id="resultArea" layoutX="114.0" layoutY="196.0" prefHeight="173.0" prefWidth="445.0" />
+      <Text layoutX="32.0" layoutY="278.0" strokeType="OUTSIDE" strokeWidth="0.0" text="返回结果" />
+      <Button fx:id="linkBtn" layoutX="576.0" layoutY="40.0" mnemonicParsing="false" onAction="#onBtnLink" prefHeight="30.0" prefWidth="74.0" text="链接">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>

@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+
+<AnchorPane fx:id="anchorPane" prefHeight="432.0" prefWidth="691.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="psn.cyf.business.java.project.ctrl.ProjectSpaceCtrl">
+   <children>
+      <ListView fx:id="directoryView" layoutX="78.0" layoutY="124.0" prefHeight="229.0" prefWidth="200.0" />
+      <Text layoutX="121.0" layoutY="109.0" strokeType="OUTSIDE" strokeWidth="0.0" text="项目目录" textAlignment="CENTER" wrappingWidth="114.0">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Text>
+      <ListView fx:id="selectedDirectoryView" layoutX="377.0" layoutY="124.0" prefHeight="229.0" prefWidth="200.0" />
+      <HBox layoutX="196.0" layoutY="51.0" prefHeight="30.0" prefWidth="247.0">
+         <children>
+            <Button fx:id="addBtn" mnemonicParsing="false" onAction="#addAction" text="新增" />
+            <Button fx:id="removeBtn" mnemonicParsing="false" onAction="#removeAction" text="移除" />
+            <Button fx:id="formatBtn" mnemonicParsing="false" onAction="#formatAction" prefHeight="30.0" prefWidth="125.0" text="项目结构格式化" />
+         </children>
+      </HBox>
+      <VBox layoutX="295.0" layoutY="166.0" prefHeight="117.0" prefWidth="50.0">
+         <children>
+            <Button fx:id="selectOneBtn" mnemonicParsing="false" onAction="#selectOneAction" prefHeight="30.0" prefWidth="43.0" text="&gt;">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Button>
+            <Button fx:id="selectAllBtn" mnemonicParsing="false" onAction="#selectAllAction" text="&gt;&gt;" />
+            <Button fx:id="unSelectedAllBtn" mnemonicParsing="false" onAction="#unSelectedAllAction" text="&lt;&lt;" />
+            <Button fx:id="unSelectedOneBtn" mnemonicParsing="false" onAction="#unSelectedOneAction" prefHeight="30.0" prefWidth="43.0" text="&lt;">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Button>
+         </children>
+      </VBox>
+      <Text layoutX="420.0" layoutY="108.0" strokeType="OUTSIDE" strokeWidth="0.0" text="已选目录" textAlignment="CENTER" wrappingWidth="114.0">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Text>
+   </children>
+</AnchorPane>

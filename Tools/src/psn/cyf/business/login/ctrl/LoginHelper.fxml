@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane fx:id="loginPane" prefHeight="432.0" prefWidth="691.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="psn.cyf.business.login.ctrl.LoginHelperCtrl">
+   <children>
+      <Text layoutX="66.0" layoutY="192.0" strokeType="OUTSIDE" strokeWidth="0.0" text="OA编码" />
+      <TextField fx:id="oaUserText" layoutX="170.0" layoutY="171.0" prefHeight="30.0" prefWidth="190.0" />
+      <Text layoutX="66.0" layoutY="142.0" strokeType="OUTSIDE" strokeWidth="0.0" text="NC编码" />
+      <TextField fx:id="ncUserText" layoutX="170.0" layoutY="121.0" onAction="#onNCUserCodeChanged" prefHeight="30.0" prefWidth="190.0" />
+      <Text layoutX="69.0" layoutY="241.0" strokeType="OUTSIDE" strokeWidth="0.0" text="路径" />
+      <TextField fx:id="ipAndPortText" layoutX="170.0" layoutY="221.0" prefHeight="30.0" prefWidth="190.0" text="http://127.0.0.1:80" />
+      <Text layoutX="62.0" layoutY="298.0" strokeType="OUTSIDE" strokeWidth="0.0" text="登录地址" />
+      <TextField fx:id="ssoURLText" layoutX="170.0" layoutY="277.0" prefHeight="30.0" prefWidth="446.0" />
+      <Button fx:id="makeURLBtn" layoutX="393.0" layoutY="136.0" mnemonicParsing="false" onAction="#makeURL" onMouseEntered="#btnEnter" onMouseExited="#btnExit" prefHeight="100.0" prefWidth="249.0" text="生成" />
+      <Text layoutX="399.0" layoutY="100.0" strokeType="OUTSIDE" strokeWidth="0.0" text="加密KEY" />
+      <TextField fx:id="keyText" layoutX="464.0" layoutY="79.0" prefHeight="30.0" prefWidth="182.0" text="12345678" />
+      <ComboBox fx:id="contrastComBo" layoutX="170.0" layoutY="27.0" onAction="#onChangeContrastWay" prefHeight="30.0" prefWidth="190.0" />
+      <Text layoutX="58.0" layoutY="49.0" strokeType="OUTSIDE" strokeWidth="0.0" text="对照方式">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Text>
+      <ComboBox fx:id="dbComBo" layoutX="381.0" layoutY="27.0" onAction="#onChangeDB" prefHeight="30.0" prefWidth="190.0" />
+      <TextField fx:id="userNameText" layoutX="170.0" layoutY="70.0" onAction="#onUserNameChanged" prefHeight="30.0" prefWidth="190.0" />
+      <Text layoutX="70.0" layoutY="91.0" strokeType="OUTSIDE" strokeWidth="0.0" text="用户名" />
+   </children>
+</AnchorPane>

@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane fx:id="pane" onDragDropped="#dragAttachementDrop" onDragOver="#dragAttachementOver" prefHeight="432.0" prefWidth="691.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="psn.cyf.business.demand.ctrl.DemandCtrl">
+   <children>
+      <ComboBox fx:id="projectCom" layoutX="121.0" layoutY="22.0" onAction="#selectProject" prefHeight="30.0" prefWidth="313.0" />
+      <TreeView fx:id="demandTree" layoutX="32.0" layoutY="75.0" onMouseClicked="#selectItem" prefHeight="325.0" prefWidth="210.0">
+         <tooltip>
+            <Tooltip text="问题列表" />
+         </tooltip></TreeView>
+      <TextField fx:id="demandName" layoutX="350.0" layoutY="75.0" prefHeight="30.0" prefWidth="282.0">
+         <tooltip>
+            <Tooltip text="需求" />
+         </tooltip></TextField>
+      <TextField fx:id="createTime" layoutX="350.0" layoutY="125.0" prefHeight="30.0" prefWidth="282.0">
+         <tooltip>
+            <Tooltip text="提出时间" />
+         </tooltip></TextField>
+      <Group layoutX="346.0" layoutY="263.0">
+         <children>
+            <ScrollBar fx:id="scrollBar" layoutX="267.0" orientation="VERTICAL" prefHeight="138.0" prefWidth="18.0" visible="false" />
+            <VBox fx:id="attachmentBox" layoutX="4.0" layoutY="7.0" prefHeight="152.0" prefWidth="281.0" />
+         </children>
+      </Group>
+      <Button layoutX="268.0" layoutY="75.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="60.0" style="-fx-background-color: rgba(255,255,255,0.5);" text="需求" />
+      <Button layoutX="268.0" layoutY="125.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="60.0" style="-fx-background-color: rgba(255,255,255,0.5);" text="时间" />
+      <Button layoutX="268.0" layoutY="201.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="60.0" style="-fx-background-color: rgba(255,255,255,0.5);" text="描述" />
+      <Button layoutX="268.0" layoutY="337.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="60.0" style="-fx-background-color: rgba(255,255,255,0.5);" text="附件" />
+      <Button layoutX="32.0" layoutY="22.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="60.0" style="-fx-background-color: rgba(255,255,255,0.5);" text="项目" />
+      <TextArea fx:id="describe" layoutX="350.0" layoutY="172.0" prefHeight="97.0" prefWidth="282.0" />
+      <Button fx:id="addBtn" layoutX="482.0" layoutY="22.0" mnemonicParsing="false" onAction="#doAdd" onMouseEntered="#btnEnter" onMouseExited="#btnExit" text="+" />
+      <Button fx:id="deleteBtn" layoutX="564.0" layoutY="22.0" mnemonicParsing="false" onAction="#doDelete" onMouseEntered="#btnEnter" onMouseExited="#btnExit" text="-" />
+      <Button fx:id="editBtn" layoutX="514.0" layoutY="22.0" mnemonicParsing="false" onAction="#doEdit" onMouseEntered="#btnEnter" onMouseExited="#btnExit" text="编辑" />
+      <Button fx:id="saveBtn" layoutX="591.0" layoutY="22.0" mnemonicParsing="false" onAction="#doSave" onMouseEntered="#btnEnter" onMouseExited="#btnExit" text="保存" />
+      <TextField fx:id="pk_demand" layoutX="346.0" layoutY="67.0" prefHeight="30.0" prefWidth="282.0" visible="false" />
+      <Button fx:id="refreshBtn" layoutX="449.0" layoutY="22.0" mnemonicParsing="false" onAction="#doRefresh" prefHeight="30.0" prefWidth="32.0" />
+   </children>
+</AnchorPane>

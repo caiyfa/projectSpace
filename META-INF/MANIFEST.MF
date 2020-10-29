@@ -1,0 +1,9 @@
+Manifest-Version: 1.0
+Class-Path: lib/ojdbc6.jar lib/ant-1.10.7.jar lib/commons-collections.
+ jar lib/commons-compress-1.18.jar lib/commons-lang3-3.9.jar lib/itext
+ pdf-5.5.13.1.jar lib/jacob-1.10.jar lib/json-20180813.jar lib/ojdbc6.
+ jar lib/poi-3.10-FINAL-20140208.jar lib/poi-ooxml-3.10-FINAL-20140208
+ .jar lib/poi-ooxml-schemas-3.10-FINAL-20140208.jar lib/poi-scratchpad
+ -3.10-FINAL-20140208.jar lib/xmlbeans-2.3.0.jar
+Main-Class: test.TraverseDataBase
+

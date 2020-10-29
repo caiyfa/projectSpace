@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane fx:id="patchPane" onDragDropped="#dragPatchFileDropped" onDragOver="#dragPatchFileOver" prefHeight="432.0" prefWidth="691.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="psn.cyf.business.patch.manage.ctrl.PatchCtrl">
+   <children>
+      <ComboBox fx:id="projectCom" layoutX="82.0" layoutY="17.0" onAction="#selectProject" prefHeight="30.0" prefWidth="220.0" />
+      <ComboBox fx:id="demandCom" layoutX="406.0" layoutY="17.0" onAction="#selectDemand" prefHeight="30.0" prefWidth="239.0" />
+      <TreeView fx:id="patchView" layoutX="51.0" layoutY="77.0" onMouseClicked="#selectPatchItem" prefHeight="314.0" prefWidth="601.0" />
+      <Text layoutX="43.0" layoutY="38.0" strokeType="OUTSIDE" strokeWidth="0.0" text="项目" />
+      <Text layoutX="336.0" layoutY="38.0" strokeType="OUTSIDE" strokeWidth="0.0" text="需求" />
+      <Text layoutX="288.0" layoutY="71.0" strokeType="OUTSIDE" strokeWidth="0.0" text="补丁列表">
+         
+      </Text>
+   </children>
+</AnchorPane>

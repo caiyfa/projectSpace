@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="gb2312">
+    <title>Title</title>
+    <style type="text/css">
+        table {
+
+            display: table;
+            border-collapse: separate;
+            box-sizing: border-box;
+            white-space: normal;
+            line-height: normal;
+            font-weight: normal;
+            font-size: medium;
+            font-style: normal;
+            color: -internal-quirk-inherit;
+            text-align: start;
+            border-spacing: 2px;
+            border-color: grey;
+            font-variant: normal;
+        }
+
+        tr {
+            display: table-row;
+            vertical-align: inherit;
+            border-color: inherit;
+        }
+
+        td {
+            font: 8pt Arial, Helvetica, Geneva, sans-serif;
+            color: black;
+            background: #FFFFCC;
+            vertical-align: top;
+        }
+
+        td.detail {
+            font: 8pt Arial, Helvetica, Geneva, sans-serif;
+            color: black;
+            background: #51C4D3;
+            vertical-align: top;
+        }
+    </style>
+</head>
+<body>
+
+<#if logVO??>
+    <table border="1">
+    <tr>
+        <td>
+            数据库信息
+        </td>
+
+        <td>
+            查询明细
+        </td>
+    </tr>
+    <#if logVO.contentVOS??>
+        <#list logVO.contentVOS as Content>
+            <tr>
+            <td>${Content.dbInfo.toShowString()}</td>
+
+            <td>
+            <#if Content.queryVOS??>
+                <table border="1">
+                <tr>
+                    <td>查询条件</td>
+                    <td>查询明细</td>
+                </tr>
+                <#list Content.queryVOS as QueryVO>
+                <tr>
+                    <td>${QueryVO.queryString}</td>
+                    <td>
+                    <table border="1">
+                        <tr>
+                            <td>表名</td>
+                            <td>条数</td>
+                            <td>语句</td>
+                        </tr>
+                <#if QueryVO.tableWithQuerySqlVOS??>
+                <#list QueryVO.tableWithQuerySqlVOS as QueryResultVO>
+                    <tr>
+                        <td class="detail">${QueryResultVO.tableName}</td>
+                        <td class="detail">${QueryResultVO.count}</td>
+                        <td class="detail">${QueryResultVO.querySQL}</td>
+                    </tr>
+                </#list>
+            <#else>
+                <tr><td width="100%">未查询出结果</td></tr>
+                </#if>
+
+                </table>
+                    </td>
+                </tr>
+                </#list>
+                </table>
+
+            </#if>
+            </td>
+            </tr>
+        </#list >
+    </#if >
+    </table>
+</#if >
+
+
+</body>
+</html>

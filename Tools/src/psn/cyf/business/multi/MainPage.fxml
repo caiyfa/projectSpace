@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.shape.*?>
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.layout.*?>
+
+<!--style="-fx-background-color: linear-gradient(to right,#53bdff,#ffbf5a);" -->
+
+<Pane fx:id="mainPane" prefHeight="432.0" prefWidth="691.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="psn.cyf.business.multi.MainPageCtrl">
+   <children>
+      <HBox fx:id="hBox1" layoutX="152.0" layoutY="107.0" prefHeight="244.0" prefWidth="294.0">
+         <children>
+            <VBox fx:id="vBox1" prefHeight="207.0" prefWidth="118.0">
+               <children>
+                  <Button fx:id="projectBtn" mnemonicParsing="false" onAction="#openProjectPage" onMouseEntered="#btnEnter" onMouseExited="#btnExit" prefHeight="39.0" prefWidth="126.0" text="项目维护">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="patchBtn" mnemonicParsing="false" onAction="#openPatchPage" onMouseEntered="#btnEnter" onMouseExited="#btnExit" prefHeight="39.0" prefWidth="126.0" text="补丁管理">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="dbConfigBtn" mnemonicParsing="false" onAction="#openDbConfigPane" prefHeight="39.0" prefWidth="126.0" text="数据源配置">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="webServiceTest" mnemonicParsing="false" onAction="#onWebServiceTest" prefHeight="30.0" prefWidth="122.0" text="接口测试">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="javaProjectBtn" mnemonicParsing="false" onAction="#onJavaProject" prefHeight="30.0" prefWidth="122.0" text="Java项目">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Button>
+               </children>
+            </VBox>
+            <VBox fx:id="vBox2" prefHeight="207.0" prefWidth="57.0" />
+            <VBox fx:id="vBox3" prefHeight="207.0" prefWidth="118.0">
+               <children>
+                  <Button fx:id="demandManagerBtn" mnemonicParsing="false" onAction="#openDemandPage" onMouseEntered="#btnEnter" onMouseExited="#btnExit" prefHeight="39.0" prefWidth="126.0" text="需求管理">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="loginHelperBtn" mnemonicParsing="false" onAction="#openLoginHelperPage" onMouseEntered="#btnEnter" onMouseExited="#btnExit" prefHeight="39.0" prefWidth="126.0" text="登录辅助">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="queryGlobal" mnemonicParsing="false" onAction="#openQueryGlobalPage" prefHeight="39.0" prefWidth="126.0" text="全局查询">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Button>
+               </children>
+            </VBox>
+         </children>
+      </HBox>
+   </children></Pane>

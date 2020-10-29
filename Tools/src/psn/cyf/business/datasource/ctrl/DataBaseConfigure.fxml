@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane fx:id="pane" prefHeight="432.0" prefWidth="691.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="psn.cyf.business.datasource.ctrl.DataBaseConfigureCtrl">
+   <children>
+      <Text layoutX="136.0" layoutY="108.0" strokeType="OUTSIDE" strokeWidth="0.0" text="数据源名称" wrappingWidth="75.0" />
+      <TextField fx:id="sourceName" layoutX="282.0" layoutY="87.0" />
+      <Text layoutX="143.0" layoutY="159.0" strokeType="OUTSIDE" strokeWidth="0.0" text="IP地址" />
+      <TextField fx:id="ip" layoutX="282.0" layoutY="138.0" />
+      <Text layoutX="143.0" layoutY="211.0" strokeType="OUTSIDE" strokeWidth="0.0" text="端口" />
+      <TextField fx:id="port" layoutX="282.0" layoutY="190.0" />
+      <Text layoutX="143.0" layoutY="307.0" strokeType="OUTSIDE" strokeWidth="0.0" text="用户" />
+      <TextField fx:id="user" layoutX="282.0" layoutY="286.0" />
+      <Text layoutX="143.0" layoutY="371.0" strokeType="OUTSIDE" strokeWidth="0.0" text="密码" />
+      <TextField fx:id="password" layoutX="282.0" layoutY="356.0" />
+      <HBox layoutX="136.0" layoutY="20.0" prefHeight="30.0" prefWidth="351.0">
+         <children>
+            <Button fx:id="addBtn" mnemonicParsing="false" onAction="#onBtnAdd" prefHeight="30.0" prefWidth="57.0" text="新增" />
+            <Button fx:id="editBtn" mnemonicParsing="false" onAction="#onBtnEdit" text="编辑" />
+            <Button fx:id="saveBtn" mnemonicParsing="false" onAction="#onBtnSave" prefHeight="30.0" prefWidth="57.0" text="保存" />
+            <Button fx:id="testBtn" mnemonicParsing="false" onAction="#onBtnTest" prefHeight="30.0" prefWidth="59.0" text="测试" />
+            <Button fx:id="delBtn" mnemonicParsing="false" onAction="#onBtnDelete" prefHeight="30.0" prefWidth="60.0" text="删除" />
+            <Button fx:id="cancelBtn" mnemonicParsing="false" onAction="#onBtnCancel" prefHeight="30.0" prefWidth="57.0" text="取消" />
+         </children>
+      </HBox>
+      <ComboBox fx:id="dbComBo" layoutX="282.0" layoutY="87.0" onAction="#onDbComboSelected" prefHeight="30.0" prefWidth="202.0" />
+      <TextField fx:id="pk_dataBase" layoutX="282.0" layoutY="57.0" />
+      <Text layoutX="143.0" layoutY="252.0" strokeType="OUTSIDE" strokeWidth="0.0" text="实例" />
+      <TextField fx:id="instance" layoutX="282.0" layoutY="241.0" />
+   </children>
+</AnchorPane>

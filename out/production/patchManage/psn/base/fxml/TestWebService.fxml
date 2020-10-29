@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+
+<AnchorPane fx:id="anchorPane" onDragDropped="#onFileDropped" prefHeight="432.0" prefWidth="691.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="psn.base.ctrl.TestWebServiceCtrl">
+   <children>
+      <Text layoutX="61.0" layoutY="89.0" strokeType="OUTSIDE" strokeWidth="0.0" text="接口路径" />
+      <TextField fx:id="targetEndpointAddress" layoutX="177.0" layoutY="68.0" prefHeight="30.0" prefWidth="434.0" text="/uapws/service/nc.itf.pfxx.synchdata.IPfxxWs" />
+      <Text layoutX="61.0" layoutY="132.0" strokeType="OUTSIDE" strokeWidth="0.0" text="命名空间" />
+      <TextField fx:id="nameSpace" layoutX="177.0" layoutY="111.0" prefHeight="30.0" prefWidth="298.0" text="http://synchdata.pfxx.itf.nc/IPfxxWs" />
+      <TextField fx:id="methodName" layoutX="177.0" layoutY="162.0" prefHeight="30.0" prefWidth="298.0" text="synchronizeData" />
+      <Text layoutX="69.0" layoutY="183.0" strokeType="OUTSIDE" strokeWidth="0.0" text="方法名" />
+      <Text layoutX="66.0" layoutY="39.0" strokeType="OUTSIDE" strokeWidth="0.0" text="IP/端口" />
+      <TextField fx:id="ipAndPort" layoutX="177.0" layoutY="18.0" prefHeight="30.0" prefWidth="434.0" text="http://localhost:8092" />
+      <TextArea fx:id="resultArea" layoutX="182.0" layoutY="245.0" prefHeight="173.0" prefWidth="445.0" />
+      <Text layoutX="62.0" layoutY="328.0" strokeType="OUTSIDE" strokeWidth="0.0" text="返回结果" />
+      <Button fx:id="linkBtn" layoutX="490.0" layoutY="111.0" mnemonicParsing="false" onAction="#onBtnLink" prefHeight="80.0" prefWidth="127.0" text="链接">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Button>
+      <Text layoutX="75.0" layoutY="221.0" strokeType="OUTSIDE" strokeWidth="0.0" text="XML" />
+      <TextField fx:id="filePath" layoutX="182.0" layoutY="200.0" prefHeight="30.0" prefWidth="290.0" promptText="请拖入XML文件" />
+   </children>
+</AnchorPane>
