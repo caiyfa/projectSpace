@@ -10,6 +10,7 @@ public class TestDateQueryStr {
         String date=firstQueryStr.substring(firstQueryStr.indexOf("'"),firstQueryStr.lastIndexOf("'")+1);
         String replaceStr="view_param.set_param("+date+")="+date;
          String finalQueySql=strWhereStr.replace(replacedStr,replaceStr);
+        System.out.println(finalQueySql);
 
 
     }

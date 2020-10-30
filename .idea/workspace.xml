@@ -248,10 +248,10 @@
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="-10" />
-    <option name="y" value="-10" />
-    <option name="width" value="1940" />
-    <option name="height" value="1030" />
+    <option name="x" value="-12" />
+    <option name="y" value="-12" />
+    <option name="width" value="1941" />
+    <option name="height" value="1032" />
   </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
@@ -313,9 +313,9 @@
     <property name="Repository.Attach.Sources" value="false" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1603952912879" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1604022006231" />
     <property name="extract.method.default.visibility" value="private" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/Tools/src/META-INF" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
@@ -425,8 +425,8 @@
     <recent_temporary>
       <list>
         <item itemvalue="Application.TestDateQueryStr" />
-        <item itemvalue="Application.TestInteger" />
         <item itemvalue="Application.Main" />
+        <item itemvalue="Application.TestInteger" />
         <item itemvalue="Application.LogToHtmlPlugin" />
         <item itemvalue="JavaScript Debug.ShowLog.html" />
       </list>
