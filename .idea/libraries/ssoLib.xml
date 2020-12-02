@@ -1,0 +1,10 @@
+<component name="libraryTable">
+  <library name="ssoLib">
+    <CLASSES>
+      <root url="file://$PROJECT_DIR$/microsoftSSO/ssoLib" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+    <jarDirectory url="file://$PROJECT_DIR$/microsoftSSO/ssoLib" recursive="false" />
+  </library>
+</component>

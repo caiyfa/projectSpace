@@ -65,7 +65,7 @@ public class MainPageCtrl extends SuperCtrl {
          Node[] disableNode = new Node[]{patchBtn, projectBtn, loginHelperBtn, demandManagerBtn,webServiceTest,javaProjectBtn};
         for (Node node : disableNode) {
 
-            node.setVisible(false);
+//            node.setVisible(false);
 
         }
     }
