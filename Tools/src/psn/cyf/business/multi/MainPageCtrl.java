@@ -62,12 +62,12 @@ public class MainPageCtrl extends SuperCtrl {
         patchBtn.setBackground(UIUtil.getBackground(ResourceAnchor.btnExitImg));
         mainPane.setBackground(UIUtil.getBackground(ResourceAnchor.bacImg));
         Cache.CONTROLLER.put(Cache.Name.MainCtrl, this);
-         Node[] disableNode = new Node[]{patchBtn, projectBtn, loginHelperBtn, demandManagerBtn,webServiceTest,javaProjectBtn};
+        /* Node[] disableNode = new Node[]{patchBtn, projectBtn, loginHelperBtn, demandManagerBtn,webServiceTest,javaProjectBtn};
         for (Node node : disableNode) {
 
             node.setVisible(false);
 
-        }
+        }*/
     }
 
     public void onJavaProject() {
