@@ -8,10 +8,12 @@
       <module fileurl="file://$PROJECT_DIR$/ProjectSpace.iml" filepath="$PROJECT_DIR$/ProjectSpace.iml" />
       <module fileurl="file://$PROJECT_DIR$/Tools/Tools.iml" filepath="$PROJECT_DIR$/Tools/Tools.iml" />
       <module fileurl="file://$PROJECT_DIR$/algorithms/algorithms.iml" filepath="$PROJECT_DIR$/algorithms/algorithms.iml" />
+      <module fileurl="file://$PROJECT_DIR$/database.iml" filepath="$PROJECT_DIR$/database.iml" />
       <module fileurl="file://$PROJECT_DIR$/face/face.iml" filepath="$PROJECT_DIR$/face/face.iml" />
       <module fileurl="file://$PROJECT_DIR$/metadata/metadata.iml" filepath="$PROJECT_DIR$/metadata/metadata.iml" />
       <module fileurl="file://$PROJECT_DIR$/microsoftSSO/microsoftSSO.iml" filepath="$PROJECT_DIR$/microsoftSSO/microsoftSSO.iml" />
       <module fileurl="file://$PROJECT_DIR$/patchManage/patchManage.iml" filepath="$PROJECT_DIR$/patchManage/patchManage.iml" />
+      <module fileurl="file://$PROJECT_DIR$/springboot/springboot.iml" filepath="$PROJECT_DIR$/springboot/springboot.iml" />
     </modules>
   </component>
 </project>
